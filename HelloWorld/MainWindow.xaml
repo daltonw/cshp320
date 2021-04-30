@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloWorld"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="350" Width="525">
 
-    </Grid>
+    <StackPanel x:Name="uxContainer">
+
+        <TextBlock>Enter Name:</TextBlock>
+        <TextBox x:Name="uxName"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}">            
+        </TextBox>
+        <TextBlock>Enter Password:</TextBlock>
+        <TextBox x:Name="uxPassword"
+                 Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}">            
+        </TextBox>
+        <Button x:Name="uxSubmit" Click="uxSubmit_Click" IsEnabled="{Binding SubmitEnabled, 
+            UpdateSourceTrigger=PropertyChanged}">Submit</Button>
+
+    </StackPanel>
 </Window>
