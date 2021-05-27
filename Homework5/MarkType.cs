@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Homework5
 {
-    public enum MarkType
-    {
-        Free,
-        Nought,
-        Cross
-    }
+    //public enum MarkType
+    //{
+    //    Free,
+    //    Nought,
+    //    Cross
+    //}
 }

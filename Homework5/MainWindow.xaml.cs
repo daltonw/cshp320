@@ -15,6 +15,12 @@ using System.Windows.Shapes;
 
 namespace Homework5
 {
+    public enum MarkType
+    {
+        Free,
+        Nought,
+        Cross
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
